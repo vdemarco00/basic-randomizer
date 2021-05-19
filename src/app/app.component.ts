@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
   
   ngOnInit(): void {
     this.content = document.getElementById("body");
-    
   }
 ;
 
