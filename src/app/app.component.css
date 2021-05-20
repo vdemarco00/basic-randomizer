@@ -1,4 +1,12 @@
 .content {
-    padding-left: 30%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#body {
+    mat-card-title: "Hello"
+}
+
+.genButton {
+    position: absolute;
 }
