@@ -1,6 +1,7 @@
 <mat-toolbar color="primary">Randomizer</mat-toolbar>
 
 <div class="content">
-  <h1 class="body-text" id="body">Press the button to generate a random value.</h1>
+  <h1 class="body-text" *ngIf="!content">Press the button to generate a random value.</h1>
+  <h1 class="body-text" *ngIf="content">{{content}}</h1>
   <button class="genButton" mat-flat-button color="primary" (click)="GenerateRandom()">Next</button>
 </div>

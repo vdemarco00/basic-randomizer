@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'angular-test';
-  content: any;
+  public content: string = "";
   restList: string[];
 
 
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.content = document.getElementById("body");
+
   }
 ;
 
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     var randIndex = Math.floor(Math.random() * this.restList.length);
     console.log(randIndex);
     console.log(this.restList[randIndex]);
-    this.content.textContent = this.restList[randIndex];
+    this.content = this.restList[randIndex];
   }
 
 }
